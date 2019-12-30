@@ -1,0 +1,56 @@
+{
+  "name": "punchcard-example",
+  "description": "An example Punchcard application",
+  "private": true,
+  "version": "0.10.0",
+  "main": "lib/index.js",
+  "types": "lib/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "synth": "cdk synth -a ./index.js",
+    "deploy": "cdk deploy -a ./index.js"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.19.0",
+    "@aws-cdk/aws-dynamodb": "^1.19.0",
+    "@aws-cdk/aws-events": "^1.19.0",
+    "@aws-cdk/aws-events-targets": "^1.19.0",
+    "@aws-cdk/aws-glue": "^1.19.0",
+    "@aws-cdk/aws-iam": "^1.19.0",
+    "@aws-cdk/aws-kinesis": "^1.19.0",
+    "@aws-cdk/aws-kinesisfirehose": "^1.19.0",
+    "@aws-cdk/aws-kms": "^1.19.0",
+    "@aws-cdk/aws-lambda": "^1.19.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.19.0",
+    "@aws-cdk/aws-logs": "^1.19.0",
+    "@aws-cdk/aws-s3": "^1.19.0",
+    "@aws-cdk/aws-s3-assets": "^1.19.0",
+    "@aws-cdk/aws-sns": "^1.19.0",
+    "@aws-cdk/aws-sns-subscriptions": "^1.19.0",
+    "@aws-cdk/aws-sqs": "^1.19.0",
+    "@aws-cdk/core": "^1.19.0",
+    "@types/uuid": "^3.4.4",
+    "@punchcard/data-lake": "^0.11.0",
+    "punchcard": "^0.11.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/node": "^11.13.7",
+    "aws-cdk": "^1.19.0",
+    "aws-sdk": "^2.395.0",
+    "jest": "^23.6.0",
+    "typescript": "^3.7.2",
+    "tslint": "^5.10.0",
+    "@babel/core": "^7.4.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "ts-loader": "6.2.1"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.js"
+    ]
+  }
+}
